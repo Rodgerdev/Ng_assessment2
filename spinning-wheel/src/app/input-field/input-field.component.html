@@ -1,0 +1,7 @@
+<div class="input-field-container">
+    <input [(ngModel)]="inputText" placeholder="Type something..." />
+    <p [ngStyle]="{color: inputText.length < 5 ? 'red' : 'black'}">
+      {{ inputText | placeholder: placeholderText: 5 }}
+    </p>
+  </div>
+  

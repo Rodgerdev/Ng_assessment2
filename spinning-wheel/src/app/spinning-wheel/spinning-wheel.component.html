@@ -1,0 +1,8 @@
+<div class="spinning-wheel-container">
+    <button (click)="spinWheel()">Spin the Wheel</button>
+    <p [ngClass]="{'extra-spin': extraSpin}" [ngStyle]="{color: extraSpin ? 'red' : 'black'}">
+      {{ result }}
+    </p>
+    <p *ngIf="extraSpin">You have an extra spin!</p>
+  </div>
+  
